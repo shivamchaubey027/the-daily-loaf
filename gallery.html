@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - The Daily Loaf</title>
+    <meta name="description"
+        content="Explore our gallery of handcrafted bread, pastries, and happy customers. See what makes The Daily Loaf special.">
+
+    <link rel="icon" type="image/png"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E��%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">��</div>
+                <span class="logo-text">The Daily Loaf</span>
+            </a>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
+                <li><a href="gallery.html" class="nav-link active">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="search-container">
+                <input type="text" class="search-bar" placeholder="Search Your Favorite...">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+
+            <div class="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="hero" style="min-height: 60vh;">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Gallery</h1>
+                <h2 class="hero-subtitle">A Glimpse of Our Craft</h2>
+                <p class="hero-description">
+                    Explore the artistry behind our handcrafted breads and pastries.
+                    Every image tells a story of passion, quality, and delicious moments.
+                </p>
+            </div>
+
+            <div class="hero-image">
+                <div class="curved-bg"></div>
+                <img src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?w=800&h=800&fit=crop"
+                    alt="Bakery Gallery" class="product-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="section">
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=500&h=500&fit=crop"
+                    alt="Fresh Sourdough" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Classic Sourdough</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=500&h=500&fit=crop"
+                    alt="Butter Croissants" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Butter Croissants</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?w=500&h=500&fit=crop"
+                    alt="Bakery Interior" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Our Cozy Space</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=500&h=500&fit=crop"
+                    alt="Artisan Bread" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Artisan Bread</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1511381939415-e44015466834?w=500&h=500&fit=crop"
+                    alt="Coffee Time" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Premium Coffee</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=500&h=500&fit=crop"
+                    alt="Fresh Baked Rolls" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Dinner Rolls</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1587241321921-91a834d82697?w=500&h=500&fit=crop"
+                    alt="Pastries" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Danish Pastries</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&h=500&fit=crop"
+                    alt="Chocolate Delights" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Chocolate Treats</h3>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <img src="https://images.unsplash.com/photo-1601924994987-69e26d50dc26?w=500&h=500&fit=crop"
+                    alt="Bread Sticks" class="gallery-image">
+                <div class="gallery-overlay">
+                    <h3 class="gallery-title">Cheese Bread Sticks</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Reviews -->
+    <section class="section" style="background: white;">
+        <div class="section-header">
+            <h2 class="section-title">Customer Reviews</h2>
+            <p class="section-subtitle">What our customers are saying</p>
+        </div>
+
+        <div class="reviews-container">
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="reviewer-avatar">A</div>
+                    <div class="reviewer-info">
+                        <h3>Ananya Verma</h3>
+                        <div class="rating">★★★★★</div>
+                    </div>
+                </div>
+                <p class="review-text">
+                    "Absolutely love the sourdough bread from The Daily Loaf! The crust is perfect,
+                    crispy on the outside and soft inside. It stays fresh for days. Highly recommend
+                    to anyone who loves quality bread!"
+                </p>
+            </div>
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="reviewer-avatar">V</div>
+                    <div class="reviewer-info">
+                        <h3>Vikram Singh</h3>
+                        <div class="rating">★★★★★</div>
+                    </div>
+                </div>
+                <p class="review-text">
+                    "The croissants here are the best I've had in India! Flaky, buttery, and just
+                    the right amount of sweetness. The coffee beans are also excellent. This is now
+                    my Sunday morning ritual!"
+                </p>
+            </div>
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="reviewer-avatar">M</div>
+                    <div class="reviewer-info">
+                        <h3>Meera Krishnan</h3>
+                        <div class="rating">★★★★★</div>
+                    </div>
+                </div>
+                <p class="review-text">
+                    "I've tried every bakery in the area, and The Daily Loaf stands out. The cheese
+                    bread sticks are addictive, and the regular bread is perfect for sandwiches.
+                    Great quality at reasonable prices!"
+                </p>
+            </div>
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="reviewer-avatar">K</div>
+                    <div class="reviewer-info">
+                        <h3>Karan Mehta</h3>
+                        <div class="rating">★★★★★</div>
+                    </div>
+                </div>
+                <p class="review-text">
+                    "As someone who's health-conscious, I appreciate that their sourdough is naturally
+                    fermented and easier to digest. No artificial additives, just pure quality ingredients.
+                    Plus, it tastes amazing!"
+                </p>
+            </div>
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="reviewer-avatar">D</div>
+                    <div class="reviewer-info">
+                        <h3>Divya Patel</h3>
+                        <div class="rating">★★★★★</div>
+                    </div>
+                </div>
+                <p class="review-text">
+                    "The non-veg buns are delicious and filling! Perfect for a quick lunch or snack.
+                    The staff is always friendly, and the bakery has such a warm, inviting atmosphere.
+                    Love this place!"
+                </p>
+            </div>
+
+            <div class="review-card">
+                <div class="review-header">
+                    <div class="reviewer-avatar">R</div>
+                    <div class="reviewer-info">
+                        <h3>Rohit Sharma</h3>
+                        <div class="rating">★★★★★</div>
+                    </div>
+                </div>
+                <p class="review-text">
+                    "Been ordering from The Daily Loaf for months now. The consistency in quality is
+                    impressive - every loaf is perfect. Their delivery is always on time, and the
+                    packaging keeps everything fresh. Five stars!"
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Feed Section -->
+    <section class="section">
+        <div class="section-header">
+            <h2 class="section-title">Follow Us on Instagram</h2>
+            <p class="section-subtitle">@butterandbloom - Tag us to be featured!</p>
+        </div>
+
+        <div style="text-align: center; margin-top: 2rem;">
+            <a href="#" class="cta-button">
+                <i class="fab fa-instagram" style="margin-right: 0.5rem;"></i>
+                Follow @butterandbloom
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>The Daily Loaf</h3>
+                <p>
+                    Crafting artisan bread and pastries with passion since 2024.
+                    Every bite tells a story of tradition, quality, and love.
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="menu.html">Menu</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Opening Hours</h3>
+                <p>Monday - Saturday: 7:00 AM - 8:00 PM</p>
+                <p>Sunday: 8:00 AM - 6:00 PM</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>📍 123 Bakery Lane, Your City</p>
+                <p>📞 +91 98765 43210</p>
+                <p>✉️ hello@butterandbloom.com</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 The Daily Loaf. All rights reserved. Made with ❤️ and flour.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

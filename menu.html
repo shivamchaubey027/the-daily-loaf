@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - The Daily Loaf</title>
+    <meta name="description"
+        content="Browse our full menu of artisan bread, croissants, coffee, and baked goods. Fresh daily with natural ingredients.">
+
+    <link rel="icon" type="image/png"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E��%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">��</div>
+                <span class="logo-text">The Daily Loaf</span>
+            </a>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="menu.html" class="nav-link active">Menu</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="search-container">
+                <input type="text" class="search-bar" id="menuSearch" placeholder="Search products...">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+
+            <div class="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="hero" style="min-height: 60vh;">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Our Menu</h1>
+                <h2 class="hero-subtitle">Handcrafted Daily Delights</h2>
+                <p class="hero-description">
+                    Explore our full range of artisan breads, pastries, and premium coffee.
+                    Everything is made fresh daily with the finest ingredients.
+                </p>
+            </div>
+
+            <div class="hero-image">
+                <div class="curved-bg"></div>
+                <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=800&h=800&fit=crop"
+                    alt="Artisan Bread Selection" class="product-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Categories -->
+    <section class="section">
+        <div class="menu-categories">
+            <button class="category-btn active" data-category="all">All Products</button>
+            <button class="category-btn" data-category="bread">Bread</button>
+            <button class="category-btn" data-category="rolls">Rolls & Buns</button>
+            <button class="category-btn" data-category="pastries">Pastries</button>
+            <button class="category-btn" data-category="snacks">Snacks</button>
+            <button class="category-btn" data-category="coffee">Coffee</button>
+            <button class="category-btn" data-category="sourdough">Sourdough Specials</button>
+        </div>
+
+        <div class="products-grid" id="productsGrid">
+            <!-- BREAD SECTION -->
+            <div class="product-card" data-category="bread">
+                <div class="product-image-container">
+                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&h=300&fit=crop"
+                        alt="Regular Bread" class="product-card-image">
+                    <span class="product-badge">Daily Fresh</span>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Regular Bread</h3>
+                    <p class="product-description">
+                        Classic soft bread made daily with premium flour. Perfect for sandwiches
+                        and toast. Light, fluffy texture with a golden crust.
+                    </p>
+                    <div class="product-footer">
+                        <div>
+                            <div class="product-price">₹55</div>
+                            <div class="product-weight">400 grms</div>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="bread">
+                <div class="product-image-container">
+                    <img src="https://images.unsplash.com/photo-1552066344-2464c1135c32?w=400&h=300&fit=crop"
+                        alt="Whole Wheat Bread" class="product-card-image">
+                    <span class="product-badge">Healthy Choice</span>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Whole Wheat Bread</h3>
+                    <p class="product-description">
+                        Nutritious whole grain bread packed with fiber and nutrients.
+                        Made with 100% whole wheat flour for health-conscious customers.
+                    </p>
+                    <div class="product-footer">
+                        <div>
+                            <div class="product-price">₹65</div>
+                            <div class="product-weight">400 grms</div>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROLLS SECTION -->
+            <div class="product-card" data-category="rolls">
+                <div class="product-image-container">
+                    <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=400&h=300&fit=crop"
+                        alt="Dinner Rolls" class="product-card-image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Artisan Dinner Rolls</h3>
+                    <p class="product-description">
+                        Perfectly sized soft rolls with a crispy exterior. Ideal for
+                        sandwiches or as a side for your favorite meals.
+                    </p>
+                    <div class="product-footer">
+                        <div>
+                            <div class="product-price">₹20</div>
+                            <div class="product-weight">30 grms each</div>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- BUNS SECTION -->
+            <div class="product-card" data-category="rolls">
+                <div class="product-image-container">
+                    <img src="https://images.unsplash.com/photo-1586444248902-2f64eddc13df?w=400&h=300&fit=crop"
+                        alt="Veg Buns" class="product-card-image">
+                    <span class="product-badge">Vegetarian</span>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Veg Buns</h3>
+                    <p class="product-description">
+                        Soft, fluffy buns filled with delicious vegetable stuffing.
+                        A perfect snack or light meal option.
+                    </p>
+                    <div class="product-footer">
+                        <div>
+                            <div class="product-price">₹30</div>
+                            <div class="product-weight">45 grms each</div>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="rolls">
+                <div class="product-image-container">
+                    <img src="https://images.unsplash.com/photo-1619880968554-c2ac4cb99c47?w=400&h=300&fit=crop"
+                        alt="Non-Veg Buns" class="product-card-image">
+                    <span class="product-badge">Non-Veg</span>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Non-Veg Buns</h3>
+                    <p class="product-description">
+                        Savory buns filled with spiced chicken or meat.
+                        A hearty, protein-rich snack that satisfies.
+                    </p>
+                    <div class="product-footer">
+                        <div>
+                            <div class="product-price">₹45</div>
+                            <div class="product-weight">45 grms each</div>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SNACKS SECTION -->
+            <div class="product-card" data-category="snacks">
+                <div class="product-image-container">
+                    <img src="https://images.unsplash.com/photo-1566478989037-eec170784d0b?w=400&h=300&fit=crop"
+                        alt="Potato Chips" class="product-card-image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Artisan Chips</h3>
+                    <p class="product-description">
+                        Crispy, hand-cut chips seasoned to perfection.
+                        Made fresh daily with premium potatoes.
+                    </p>
+                    <div class="product-footer">
+                        <div>
+                            <div class="product-price">₹60</div>
+                            <div class="product-weight">200 grms</div>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="snacks">
+                <div class="product-image-container">
+                    <img src="https://images.unsplash.com/photo-1601924994987-69e26d50dc26?w=400&h=300&fit=crop"
+                        alt="Cheese Bread Sticks" class="product-card-image">
+                    <span class="product-badge">Popular</span>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Cheese Bread Sticks</h3>
+                    <p class="product-description">
+                        Crispy bread sticks loaded with melted cheese.
+                        Perfect for sharing or as a party snack.
+                    </p>
+                    <div class="product-footer">
+                        <div>
+                            <div class="product-price">₹110</div>
+                            <div class="product-weight">250 grms</div>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COFFEE SECTION -->
+            <div class="product-card" data-category="coffee">
+                <div class="product-image-container">
+                    <img src="https://images.unsplash.com/photo-1511381939415-e44015466834?w=400&h=300&fit=crop"
+                        alt="Coffee Beans" class="product-card-image">
+                    <span class="product-badge">Premium</span>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Artisan Coffee Beans</h3>
+                    <p class="product-description">
+                        Freshly roasted premium arabica beans. Rich aroma with
+                        balanced acidity and smooth finish.
+                    </p>
+                    <div class="product-footer">
+                        <div>
+                            <div class="product-price">₹700</div>
+                            <div class="product-weight">250 grms</div>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="coffee">
+                <div class="product-image-container">
+                    <img src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=400&h=300&fit=crop"
+                        alt="Coffee Powder" class="product-card-image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Ground Coffee Powder</h3>
+                    <p class="product-description">
+                        Freshly ground coffee powder ready to brew.
+                        Perfect grind size for filter or French press.
+                    </p>
+                    <div class="product-footer">
+                        <div>
+                            <div class="product-price">₹500</div>
+                            <div class="product-weight">250 grms</div>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SOURDOUGH SECTION -->
+            <div class="product-card" data-category="sourdough">
+                <div class="product-image-container">
+                    <img src="https://images.unsplash.com/photo-1549931319-a545dcf3bc73?w=400&h=300&fit=crop"
+                        alt="Sourdough Bread" class="product-card-image">
+                    <span class="product-badge">Signature</span>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Classic Sourdough Bread</h3>
+                    <p class="product-description">
+                        Our signature sourdough with crispy crust and soft interior.
+                        24-hour fermentation for complex flavors.
+                    </p>
+                    <div class="product-footer">
+                        <div>
+                            <div class="product-price">₹120</div>
+                            <div class="product-weight">500 grms</div>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="sourdough">
+                <div class="product-image-container">
+                    <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=400&h=300&fit=crop"
+                        alt="Sourdough Toast" class="product-card-image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Sourdough Toast Loaf</h3>
+                    <p class="product-description">
+                        Pre-sliced sourdough perfect for toasting.
+                        Ideal for breakfast with butter and jam.
+                    </p>
+                    <div class="product-footer">
+                        <div>
+                            <div class="product-price">₹130</div>
+                            <div class="product-weight">500 grms</div>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="pastries sourdough">
+                <div class="product-image-container">
+                    <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=400&h=300&fit=crop"
+                        alt="Sourdough Croissants" class="product-card-image">
+                    <span class="product-badge">Bestseller</span>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Sourdough Croissants</h3>
+                    <p class="product-description">
+                        Buttery, flaky croissants made with sourdough starter.
+                        The perfect blend of tradition and French technique.
+                    </p>
+                    <div class="product-footer">
+                        <div>
+                            <div class="product-price">₹150</div>
+                            <div class="product-weight">Pack of 4</div>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="pastries sourdough">
+                <div class="product-image-container">
+                    <img src="https://images.unsplash.com/photo-1519915028121-7d3463d20b13?w=400&h=300&fit=crop"
+                        alt="Sourdough Tarts" class="product-card-image">
+                    <span class="product-badge">New</span>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Sourdough Fruit Tarts</h3>
+                    <p class="product-description">
+                        Delicate tarts with sourdough pastry filled with seasonal fruits.
+                        A perfect balance of sweet and tangy.
+                    </p>
+                    <div class="product-footer">
+                        <div>
+                            <div class="product-price">₹180</div>
+                            <div class="product-weight">Pack of 3</div>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ADDITIONAL PASTRIES -->
+            <div class="product-card" data-category="pastries">
+                <div class="product-image-container">
+                    <img src="https://images.unsplash.com/photo-1587241321921-91a834d82697?w=400&h=300&fit=crop"
+                        alt="Danish Pastries" class="product-card-image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Danish Pastries</h3>
+                    <p class="product-description">
+                        Flaky layered pastries with sweet fillings.
+                        Choose from apple, custard, or chocolate.
+                    </p>
+                    <div class="product-footer">
+                        <div>
+                            <div class="product-price">₹140</div>
+                            <div class="product-weight">Pack of 4</div>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="pastries">
+                <div class="product-image-container">
+                    <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=400&h=300&fit=crop"
+                        alt="Chocolate Muffins" class="product-card-image">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-name">Double Chocolate Muffins</h3>
+                    <p class="product-description">
+                        Decadent chocolate muffins with chocolate chips.
+                        Moist, rich, and irresistibly delicious.
+                    </p>
+                    <div class="product-footer">
+                        <div>
+                            <div class="product-price">₹100</div>
+                            <div class="product-weight">Pack of 4</div>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>The Daily Loaf</h3>
+                <p>
+                    Crafting artisan bread and pastries with passion since 2024.
+                    Every bite tells a story of tradition, quality, and love.
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="menu.html">Menu</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Opening Hours</h3>
+                <p>Monday - Saturday: 7:00 AM - 8:00 PM</p>
+                <p>Sunday: 8:00 AM - 6:00 PM</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>📍 123 Bakery Lane, Your City</p>
+                <p>📞 +91 98765 43210</p>
+                <p>✉️ hello@butterandbloom.com</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 The Daily Loaf. All rights reserved. Made with ❤️ and flour.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

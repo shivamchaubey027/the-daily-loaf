@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - The Daily Loaf</title>
+    <meta name="description"
+        content="Get in touch with The Daily Loaf. Visit us, call us, or send us a message. We'd love to hear from you!">
+
+    <link rel="icon" type="image/png"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E��%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <div class="logo-icon">��</div>
+                <span class="logo-text">The Daily Loaf</span>
+            </a>
+
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="menu.html" class="nav-link">Menu</a></li>
+                <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+                <li><a href="contact.html" class="nav-link active">Contact</a></li>
+            </ul>
+
+            <div class="search-container">
+                <input type="text" class="search-bar" placeholder="Search Your Favorite...">
+                <i class="fas fa-search search-icon"></i>
+            </div>
+
+            <div class="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Hero -->
+    <section class="hero" style="min-height: 60vh;">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Get in Touch</h1>
+                <h2 class="hero-subtitle">We'd Love to Hear From You</h2>
+                <p class="hero-description">
+                    Have a question, special order, or just want to say hello?
+                    Drop by our bakery, give us a call, or send us a message!
+                </p>
+            </div>
+
+            <div class="hero-image">
+                <div class="curved-bg"></div>
+                <img src="https://images.unsplash.com/photo-1517686469429-8bdb88b9f907?w=800&h=800&fit=crop"
+                    alt="Contact Us" class="product-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" style="background: white;">
+        <div class="contact-container">
+            <!-- Contact Information -->
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Visit Our Bakery</h3>
+                        <p>
+                            123 Bakery Lane<br>
+                            MG Road, Koramangala<br>
+                            Bangalore, Karnataka 560095<br>
+                            India
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Call Us</h3>
+                        <p>
+                            Main: +91 98765 43210<br>
+                            Orders: +91 98765 43211<br>
+                            WhatsApp: +91 98765 43210<br>
+                            Available: 7:00 AM - 8:00 PM
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Email Us</h3>
+                        <p>
+                            General: hello@butterandbloom.com<br>
+                            Orders: orders@butterandbloom.com<br>
+                            Catering: catering@butterandbloom.com<br>
+                            We respond within 24 hours
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h3>Opening Hours</h3>
+                        <p>
+                            Monday - Saturday: 7:00 AM - 8:00 PM<br>
+                            Sunday: 8:00 AM - 6:00 PM<br>
+                            <br>
+                            <em>Fresh bread ready by 8:00 AM daily!</em>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2
+                    style="color: var(--primary-dark); margin-bottom: 1.5rem; font-family: var(--font-heading); font-size: 2rem;">
+                    Send Us a Message
+                </h2>
+
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label class="form-label" for="name">Your Name *</label>
+                        <input type="text" id="name" class="form-input" placeholder="John Doe" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="email">Email Address *</label>
+                        <input type="email" id="email" class="form-input" placeholder="john@example.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="phone">Phone Number</label>
+                        <input type="tel" id="phone" class="form-input" placeholder="+91 98765 43210">
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="subject">Subject *</label>
+                        <input type="text" id="subject" class="form-input" placeholder="How can we help?" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="form-label" for="message">Message *</label>
+                        <textarea id="message" class="form-textarea" placeholder="Tell us more about your inquiry..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-button">
+                        <i class="fas fa-paper-plane" style="margin-right: 0.5rem;"></i>
+                        Send Message
+                    </button>
+                </form>
+
+                <div id="formMessage" style="margin-top: 1rem; padding: 1rem; border-radius: 8px; display: none;"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <section class="section" style="padding: 0;">
+        <div
+            style="width: 100%; height: 450px; background: var(--gradient-peach); display: flex; align-items: center; justify-content: center; position: relative;">
+            <div style="text-align: center; z-index: 1;">
+                <div style="font-size: 4rem; margin-bottom: 1rem;">📍</div>
+                <h3 style="font-family: var(--font-heading); font-size: 2rem; color: white; margin-bottom: 1rem;">
+                    Find Us Here
+                </h3>
+                <p style="color: rgba(255,255,255,0.9); font-size: 1.1rem; margin-bottom: 1.5rem;">
+                    123 Bakery Lane, MG Road, Koramangala<br>
+                    Bangalore, Karnataka 560095
+                </p>
+                <a href="https://maps.google.com" target="_blank" class="cta-button"
+                    style="background: white; color: var(--primary-dark);">
+                    <i class="fas fa-map-marked-alt" style="margin-right: 0.5rem;"></i>
+                    Get Directions
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+        <div class="section-header">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <p class="section-subtitle">Quick answers to common questions</p>
+        </div>
+
+        <div style="max-width: 900px; margin: 0 auto;">
+            <div class="feature-card" style="margin-bottom: 1.5rem; text-align: left;">
+                <h3 style="color: var(--primary-dark); font-size: 1.3rem; margin-bottom: 0.8rem;">
+                    Do you take custom orders?
+                </h3>
+                <p style="color: var(--primary-brown); line-height: 1.8;">
+                    Yes! We love creating special orders for events, parties, and celebrations.
+                    Please contact us at least 48 hours in advance for custom orders.
+                </p>
+            </div>
+
+            <div class="feature-card" style="margin-bottom: 1.5rem; text-align: left;">
+                <h3 style="color: var(--primary-dark); font-size: 1.3rem; margin-bottom: 0.8rem;">
+                    Do you offer delivery?
+                </h3>
+                <p style="color: var(--primary-brown); line-height: 1.8;">
+                    Yes, we deliver within a 5km radius. Orders above ₹500 get free delivery.
+                    You can also order through popular food delivery apps.
+                </p>
+            </div>
+
+            <div class="feature-card" style="margin-bottom: 1.5rem; text-align: left;">
+                <h3 style="color: var(--primary-dark); font-size: 1.3rem; margin-bottom: 0.8rem;">
+                    Are your products suitable for people with dietary restrictions?
+                </h3>
+                <p style="color: var(--primary-brown); line-height: 1.8;">
+                    Our sourdough bread is naturally easier to digest due to fermentation.
+                    We're working on gluten-free and vegan options. Please call us to discuss
+                    specific dietary needs.
+                </p>
+            </div>
+
+            <div class="feature-card" style="margin-bottom: 1.5rem; text-align: left;">
+                <h3 style="color: var(--primary-dark); font-size: 1.3rem; margin-bottom: 0.8rem;">
+                    How long does your bread stay fresh?
+                </h3>
+                <p style="color: var(--primary-brown); line-height: 1.8;">
+                    Our sourdough stays fresh for 5-7 days when stored properly in a bread box
+                    or paper bag. Regular bread is best consumed within 2-3 days. All our products
+                    can be frozen for up to 3 months.
+                </p>
+            </div>
+
+            <div class="feature-card" style="margin-bottom: 1.5rem; text-align: left;">
+                <h3 style="color: var(--primary-dark); font-size: 1.3rem; margin-bottom: 0.8rem;">
+                    Do you offer catering services?
+                </h3>
+                <p style="color: var(--primary-brown); line-height: 1.8;">
+                    Absolutely! We provide catering for events, corporate meetings, and parties.
+                    Contact us at catering@butterandbloom.com for a custom quote.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media -->
+    <section class="section" style="background: white; text-align: center;">
+        <h2
+            style="font-family: var(--font-heading); font-size: 2.5rem; color: var(--primary-dark); margin-bottom: 1.5rem;">
+            Connect With Us
+        </h2>
+        <p
+            style="color: var(--primary-brown); font-size: 1.1rem; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto;">
+            Follow us on social media for daily updates, special offers, and behind-the-scenes glimpses of our baking
+            process!
+        </p>
+
+        <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+            <a href="#"
+                style="display: inline-flex; align-items: center; gap: 0.8rem; padding: 1rem 2rem; background: var(--gradient-peach); color: white; border-radius: 50px; font-weight: 600; transition: var(--transition-normal);">
+                <i class="fab fa-instagram" style="font-size: 1.5rem;"></i>
+                Instagram
+            </a>
+
+            <a href="#"
+                style="display: inline-flex; align-items: center; gap: 0.8rem; padding: 1rem 2rem; background: var(--gradient-peach); color: white; border-radius: 50px; font-weight: 600; transition: var(--transition-normal);">
+                <i class="fab fa-facebook" style="font-size: 1.5rem;"></i>
+                Facebook
+            </a>
+
+            <a href="#"
+                style="display: inline-flex; align-items: center; gap: 0.8rem; padding: 1rem 2rem; background: var(--gradient-peach); color: white; border-radius: 50px; font-weight: 600; transition: var(--transition-normal);">
+                <i class="fab fa-whatsapp" style="font-size: 1.5rem;"></i>
+                WhatsApp
+            </a>
+
+            <a href="#"
+                style="display: inline-flex; align-items: center; gap: 0.8rem; padding: 1rem 2rem; background: var(--gradient-peach); color: white; border-radius: 50px; font-weight: 600; transition: var(--transition-normal);">
+                <i class="fab fa-twitter" style="font-size: 1.5rem;"></i>
+                Twitter
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>The Daily Loaf</h3>
+                <p>
+                    Crafting artisan bread and pastries with passion since 2024.
+                    Every bite tells a story of tradition, quality, and love.
+                </p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="menu.html">Menu</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div class="footer-section">
+                <h3>Opening Hours</h3>
+                <p>Monday - Saturday: 7:00 AM - 8:00 PM</p>
+                <p>Sunday: 8:00 AM - 6:00 PM</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>📍 123 Bakery Lane, Your City</p>
+                <p>📞 +91 98765 43210</p>
+                <p>✉️ hello@butterandbloom.com</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 The Daily Loaf. All rights reserved. Made with ❤️ and flour.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

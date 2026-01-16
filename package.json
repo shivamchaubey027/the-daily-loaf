@@ -1,0 +1,24 @@
+{
+  "name": "butter-and-bloom",
+  "version": "1.0.0",
+  "description": "Artisan Bakery Website - Butter & Bloom",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "bakery",
+    "artisan",
+    "bread",
+    "sourdough"
+  ],
+  "author": "Butter & Bloom",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
