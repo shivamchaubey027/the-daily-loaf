@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: the-daily-loaf
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    plan: free
+    healthCheckPath: /
